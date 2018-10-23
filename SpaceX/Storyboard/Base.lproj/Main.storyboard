@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="FJv-0H-OIf">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Launch Table View Controller-->
+        <scene sceneID="edO-zu-vML">
+            <objects>
+                <tableViewController id="FJv-0H-OIf" customClass="LaunchTableViewController" customModule="SpaceX" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="wAR-4c-6xM">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <searchBar key="tableHeaderView" contentMode="redraw" placeholder="Enter Launch Year" id="ZLe-Ea-K5d">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <color key="barTintColor" red="0.58072251080000004" green="0.066734083" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </searchBar>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="launchCell" rowHeight="151" id="jYk-LN-bl1" customClass="LaunchTableViewCell" customModule="SpaceX" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="72" width="375" height="151"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="jYk-LN-bl1" id="HbB-3Z-e3q">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="150.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="18" translatesAutoresizingMaskIntoConstraints="NO" id="xg4-gD-Btw">
+                                            <rect key="frame" x="16" y="16" width="279.5" height="119"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="l2q-I4-YxZ">
+                                                    <rect key="frame" x="0.0" y="0.0" width="128" height="119"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="128" id="VjT-PP-nTO"/>
+                                                        <constraint firstAttribute="height" constant="119" id="oKY-tp-has"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Bsw-hj-X0F">
+                                                    <rect key="frame" x="146" y="18.5" width="133.5" height="82.5"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(Mission Name)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TS8-lS-U8g">
+                                                            <rect key="frame" x="0.0" y="0.0" width="133.5" height="23"/>
+                                                            <fontDescription key="fontDescription" type="italicSystem" pointSize="19"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(Rocket Name)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Alm-TN-lV6">
+                                                            <rect key="frame" x="0.0" y="33" width="133.5" height="21.5"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(Launch year)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X0w-h2-JHx">
+                                                            <rect key="frame" x="0.0" y="64.5" width="133.5" height="18"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
+                                        </stackView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="xg4-gD-Btw" firstAttribute="top" secondItem="HbB-3Z-e3q" secondAttribute="top" constant="16" id="Rtg-ZW-xHr"/>
+                                        <constraint firstAttribute="trailing" secondItem="xg4-gD-Btw" secondAttribute="trailing" constant="79.5" id="Wuw-f1-jTZ"/>
+                                        <constraint firstAttribute="bottom" secondItem="xg4-gD-Btw" secondAttribute="bottom" constant="15.5" id="dTf-l7-fqT"/>
+                                        <constraint firstItem="xg4-gD-Btw" firstAttribute="leading" secondItem="HbB-3Z-e3q" secondAttribute="leading" constant="16" id="v1m-0c-LLZ"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="launchYearLabel" destination="X0w-h2-JHx" id="kXB-Io-hLL"/>
+                                    <outlet property="missionNameLabel" destination="TS8-lS-U8g" id="o8g-Di-gP1"/>
+                                    <outlet property="patchImageView" destination="l2q-I4-YxZ" id="N6S-h9-sXD"/>
+                                    <outlet property="rocketNameLabel" destination="Alm-TN-lV6" id="SXb-Qh-DKr"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="FJv-0H-OIf" id="4UV-It-Xr8"/>
+                            <outlet property="delegate" destination="FJv-0H-OIf" id="2i1-lT-PT1"/>
+                        </connections>
+                    </tableView>
+                    <connections>
+                        <outlet property="launchSearchbar" destination="ZLe-Ea-K5d" id="z0A-O1-806"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pKq-AD-B4i" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="101.59999999999999" y="20.239880059970016"/>
+        </scene>
+    </scenes>
+</document>
